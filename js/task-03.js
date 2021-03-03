@@ -23,6 +23,9 @@ listImageEl.classList.add('style');
 //   const el = images[i];
 //   listImageEl.insertAdjacentHTML('afterbegin', `<li><img width='200px' src=${el.url} alt=${el.alt}></li>`);
 // };
-images.map(({ url, alt }) => {
-  return listImageEl.insertAdjacentHTML('afterbegin', `<li><img width='200px' src=${url} alt=${alt}></li>`);
-});
+// images.map(({ url, alt }) => {
+//   return listImageEl.insertAdjacentHTML('afterbegin', `<li><img width='200px' src=${url} alt=${alt}></li>`);
+// });
+
+const markUp = images.map(({ url, alt }) => `<li><img class="img" src=${url} alt=${alt}></li>`).join('');
+listImageEl.insertAdjacentHTML('afterbegin', markUp);

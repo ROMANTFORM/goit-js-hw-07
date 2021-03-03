@@ -1,8 +1,17 @@
 .style {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
+.img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
 #validation-input {
   border: 3px solid #bdbdbd;
 }
